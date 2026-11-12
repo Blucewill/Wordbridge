@@ -60,6 +60,7 @@ No key yet? It still runs. Without `SERV_API_KEY` the server returns clearly-lab
 
 ## Deploy
 
+- **Vercel (free, no card):** Add New → Project → import this repo → add `SERV_API_KEY` under Environment Variables → Deploy. Uses [`vercel.json`](vercel.json) + the serverless functions in [`api/`](api).
 - **Render:** New → Blueprint → point at this repo (uses [`render.yaml`](render.yaml)), then set `SERV_API_KEY`.
 - **Railway / Fly / any Node host:** start command `node server.js`, set `SERV_API_KEY`.
 
@@ -70,6 +71,7 @@ public/            static site: landing page (index.html) + app (app.html, app.j
   sw.js            service worker: offline app shell (AI calls are never cached)
   manifest.webmanifest + icon-*.png   installable PWA
   common.js        shared browser helpers: API calls, speech in/out, SERV trace badge
+api/               Vercel serverless functions (same agents, same behaviour)
 server.js          zero-dependency Node HTTP server: static files + POST /api/<agent>
 agents.js          the WordBridge agents: system prompts, input → SERV → JSON, demo fallbacks
 lib/serv.js        minimal SERV Reasoning client (fetch, reasoning_effort, JSON extraction)
