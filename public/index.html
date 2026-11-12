@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WordBridge — your words, finished</title>
+  <meta name="description" content="WordBridge turns word fragments into complete spoken sentences for people living with aphasia. Powered by SERV Reasoning." />
+  <link rel="icon" href="logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main">
+        <a class="brand" href="/"><img class="brand-mark" src="logo.svg" alt="" />WordBridge</a>
+        <div class="nav-links">
+          <a href="#how">How it works</a>
+          <a href="#partner">Partner mode</a>
+          <a href="#who">Who it's for</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <a class="btn btn-ghost" href="/app">Open app</a>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+        <span class="eyebrow">For people living with aphasia</span>
+        <h1 class="mega">Word<br />Bridge<sup>*</sup></h1>
+        <p class="lede">You know exactly what you mean. The words just won't come out. Tap a few words, and WordBridge offers you whole sentences to choose from, then says the one you pick out loud, in your voice.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/app">Start talking ▸</a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        </div>
+        <svg class="hero-bridge" viewBox="0 0 640 520" role="img" aria-label="A suspension bridge at sunset. A speech bubble saying 'water… cold' on one side crosses the bridge and becomes 'Could I have cold water, please?' on the other.">
+          <defs>
+            <radialGradient id="sun"><stop offset="0" stop-color="#fff1d6"/><stop offset=".45" stop-color="#ffb547"/><stop offset="1" stop-color="#ffb547" stop-opacity="0"/></radialGradient>
+            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a3c" stop-opacity=".55"/><stop offset="1" stop-color="#14123b" stop-opacity="0"/></linearGradient>
+            <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb547"/><stop offset="1" stop-color="#c2410c"/></linearGradient>
+            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#ffb547"/></marker>
+          </defs>
+          <circle cx="331" cy="260" r="150" fill="url(#sun)" opacity=".8"/>
+          <rect x="0" y="348" width="640" height="172" fill="url(#water)"/>
+          <g stroke="#f8f1e7" stroke-opacity=".25" stroke-width="3" stroke-linecap="round">
+            <line x1="120" y1="400" x2="210" y2="400"/><line x1="300" y1="420" x2="420" y2="420"/><line x1="470" y1="445" x2="560" y2="445"/><line x1="60" y1="460" x2="150" y2="460"/>
+          </g>
+          <!-- reflections -->
+          <g opacity=".22" fill="#ff7a1a"><rect x="190" y="352" width="22" height="120"/><rect x="450" y="352" width="22" height="120"/></g>
+          <!-- hangers -->
+          <g stroke="#f8f1e7" stroke-width="2" stroke-opacity=".75"><line x1="221" y1="154.1" x2="221" y2="332"/><line x1="241" y1="178.4" x2="241" y2="332"/><line x1="261" y1="197.8" x2="261" y2="332"/><line x1="281" y1="212.3" x2="281" y2="332"/><line x1="301" y1="222.0" x2="301" y2="332"/><line x1="321" y1="226.9" x2="321" y2="332"/><line x1="341" y1="226.9" x2="341" y2="332"/><line x1="361" y1="222.0" x2="361" y2="332"/><line x1="381" y1="212.3" x2="381" y2="332"/><line x1="401" y1="197.8" x2="401" y2="332"/><line x1="421" y1="178.4" x2="421" y2="332"/><line x1="441" y1="154.1" x2="441" y2="332"/><line x1="40" y1="289.2" x2="40" y2="332"/><line x1="80" y1="248.4" x2="80" y2="332"/><line x1="120" y1="207.6" x2="120" y2="332"/><line x1="160" y1="166.8" x2="160" y2="332"/><line x1="500" y1="169.7" x2="500" y2="332"/><line x1="540" y1="215.5" x2="540" y2="332"/><line x1="580" y1="261.3" x2="580" y2="332"/><line x1="620" y1="307.1" x2="620" y2="332"/></g>
+          <!-- main cables -->
+          <path d="M0 330 L201 125 Q331 535 461 125 L640 330" fill="none" stroke="#ff7a1a" stroke-width="6" stroke-linejoin="round"/>
+          <!-- towers -->
+          <rect x="190" y="112" width="22" height="240" rx="4" fill="url(#tower)"/>
+          <rect x="450" y="112" width="22" height="240" rx="4" fill="url(#tower)"/>
+          <rect x="184" y="170" width="34" height="8" rx="3" fill="#ff7a1a"/><rect x="444" y="170" width="34" height="8" rx="3" fill="#ff7a1a"/>
+          <rect x="184" y="250" width="34" height="8" rx="3" fill="#ff7a1a"/><rect x="444" y="250" width="34" height="8" rx="3" fill="#ff7a1a"/>
+          <!-- deck -->
+          <rect x="0" y="332" width="640" height="16" fill="#f8f1e7"/>
+          <rect x="0" y="348" width="640" height="6" fill="#c2410c"/>
+          <!-- fragment → sentence -->
+          <path d="M170 62 C 260 10, 340 10, 410 52" fill="none" stroke="#ffb547" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#arrow)"/>
+          <g>
+            <rect x="16" y="40" width="160" height="52" rx="16" fill="#f8f1e7"/>
+            <path d="M48 92 l0 18 l18 -18z" fill="#f8f1e7"/>
+            <text x="96" y="73" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="21" fill="#14123b">water… cold</text>
+          </g>
+          <g>
+            <rect x="416" y="28" width="210" height="76" rx="16" fill="#ff7a1a"/>
+            <path d="M588 104 l0 18 l-18 -18z" fill="#ff7a1a"/>
+            <text x="521" y="60" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="18" fill="#14123b">Could I have cold</text>
+            <text x="521" y="86" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="18" fill="#14123b">water, please?</text>
+          </g>
+          <g fill="#fff" opacity=".7"><circle cx="250" cy="30" r="2"/><circle cx="360" cy="120" r="1.5"/><circle cx="600" cy="170" r="2"/><circle cx="40" cy="180" r="1.5"/></g>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Three taps<br />to a full sentence</h2>
+          <div>
+            <p class="kicker"><b>01</b> / How it works</p>
+            <p style="margin-top:14px">Most speech apps make you build every sentence word by word. WordBridge works from fragments, the way aphasia actually works.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="num">01<small>/03</small></span>
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#2a2580"/><rect x="38" y="62" width="56" height="50" rx="10" fill="#ffb547"/><rect x="106" y="62" width="56" height="50" rx="10" fill="#ff7a1a"/><rect x="38" y="122" width="56" height="44" rx="10" fill="#f8f1e7"/><rect x="106" y="122" width="56" height="44" rx="10" fill="#ef4b4b"/><text x="66" y="96" font-size="26" text-anchor="middle">💧</text><text x="134" y="96" font-size="26" text-anchor="middle">❄️</text><circle cx="150" cy="150" r="14" fill="#f8f1e7" stroke="#14123b" stroke-width="4"/></svg>
+            <h3>Tap fragments</h3>
+            <p>Tap picture tiles or type a few words, misspelled is fine. "water cold" is enough.</p>
+          </article>
+          <article class="card">
+            <span class="num">02<small>/03</small></span>
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#2a2580"/><rect x="34" y="52" width="132" height="26" rx="13" fill="#f8f1e7"/><rect x="34" y="88" width="132" height="26" rx="13" fill="#ffb547"/><rect x="34" y="124" width="132" height="26" rx="13" fill="#f8f1e7" opacity=".6"/><path d="M128 101 l10 10 l20 -22" stroke="#14123b" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+            <h3>Pick your sentence</h3>
+            <p>SERV Reasoning works out what you most likely mean and offers four complete sentences.</p>
+          </article>
+          <article class="card">
+            <span class="num">03<small>/03</small></span>
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#2a2580"/><path d="M60 82 h22 l30 -26 v88 l-30 -26 h-22z" fill="#ff7a1a"/><path d="M128 76 q18 24 0 48" stroke="#f8f1e7" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M142 62 q32 38 0 76" stroke="#ffb547" stroke-width="7" fill="none" stroke-linecap="round"/></svg>
+            <h3>It speaks for you</h3>
+            <p>Tap once and it's spoken aloud. Save favourites to your phrasebook for next time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="partner" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Partner mode</h2>
+          <div><p class="kicker"><b>02</b> / Two-way conversation</p></div>
+        </div>
+        <div class="split">
+          <div class="split-art" aria-hidden="true">
+            <svg viewBox="0 0 400 420" style="position:absolute;inset:0;width:100%;height:100%" preserveAspectRatio="xMidYMid slice">
+              <circle cx="300" cy="90" r="60" fill="#ffd28a" opacity=".5"/>
+              <g transform="translate(0,-70)"><path d="M0 372 h400 v48 h-400z" fill="#3a1d6e" opacity=".8"/><path d="M0 372 Q100 300 200 372 Q300 300 400 372" fill="none" stroke="#3a1d6e" stroke-width="10" opacity=".8"/><path d="M40 348 v24 M80 330 v42 M120 330 v42 M160 348 v24 M240 348 v24 M280 330 v42 M320 330 v42 M360 348 v24" stroke="#3a1d6e" stroke-width="4" opacity=".8"/></g>
+              <rect x="70" y="80" width="190" height="56" rx="18" fill="#f8f1e7"/><text x="90" y="116" font-family="Archivo" font-weight="800" font-size="20" fill="#14123b">Tea or coffee?</text>
+              <rect x="150" y="160" width="180" height="46" rx="14" fill="#4b3fd6"/><text x="170" y="190" font-family="Archivo" font-weight="700" font-size="17" fill="#fff">Tea, please.</text>
+              <rect x="150" y="214" width="180" height="46" rx="14" fill="#4b3fd6" opacity=".85"/><text x="170" y="244" font-family="Archivo" font-weight="700" font-size="17" fill="#fff">Coffee, please.</text>
+              <rect x="150" y="268" width="180" height="46" rx="14" fill="#4b3fd6" opacity=".7"/><text x="170" y="298" font-family="Archivo" font-weight="700" font-size="17" fill="#fff">Just water.</text>
+            </svg>
+          </div>
+          <div class="split-body">
+            <span class="tag">Listen · Understand · Reply</span>
+            <h3>When someone asks you something, your answers are already there.</h3>
+            <dl>
+              <dt>Listen</dt><dd>WordBridge hears your conversation partner through the microphone and shows the question in big, simple words.</dd>
+              <dt>Reply</dt><dd>You get five one-tap replies: yes, no, the specific choices, or "please say that again slowly."</dd>
+              <dt>Stay in the conversation</dt><dd>No more nodding along. You answer in seconds instead of minutes.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="who" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Built for people who<br />know what they mean</h2>
+          <div><p class="kicker"><b>03</b> / Who it's for</p></div>
+        </div>
+        <div class="stats" style="margin-bottom:40px">
+          <div class="stat"><b>2M+</b><span>Americans live with aphasia (National Aphasia Association)</span></div>
+          <div class="stat"><b>~1 in 3</b><span>stroke survivors experience aphasia</span></div>
+          <div class="stat"><b>$0</b><span>to start. Runs on any phone, tablet or laptop browser</span></div>
+        </div>
+        <div class="audience">
+          <div class="aud"><div class="ico">🧠</div><h4>Stroke survivors</h4><p>People with expressive aphasia who understand everything but struggle to find words.</p></div>
+          <div class="aud"><div class="ico">🗣️</div><h4>ALS / MND &amp; laryngectomy</h4><p>People losing their speech who need a fast, dignified voice.</p></div>
+          <div class="aud"><div class="ico">🧩</div><h4>Non-speaking autistic adults</h4><p>Symbol tiles plus sentence prediction, without the clinical feel.</p></div>
+          <div class="aud"><div class="ico">🩺</div><h4>Speech therapists &amp; carers</h4><p>See how fragments were read, which builds trust in what the app says.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Pricing</h2>
+          <div><p class="kicker"><b>04</b> / Plans</p><p style="margin-top:14px">Dedicated speech devices often cost thousands. WordBridge runs on hardware people already own.</p></div>
+        </div>
+        <div class="pricing">
+          <div class="plan"><h4>Personal</h4><div class="price">Free</div><p>Tiles, sentence suggestions, emergency phrase, phrasebook on device.</p></div>
+          <div class="plan featured"><h4>Family</h4><div class="price">$6<small>/month</small></div><p>Everything in Personal, plus:</p><ul><li>Personal profile that learns from your choices</li><li>Partner mode</li><li>Phrasebook sync across devices</li></ul></div>
+          <div class="plan"><h4>Clinic</h4><div class="price">$29<small>/seat/mo</small></div><p>For SLP clinics and stroke units: client profiles, progress reports, reasoning logs for review.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:20px">
+      <div class="wrap">
+        <div class="serv">
+          <div>
+            <span class="eyebrow">Powered by SERV Reasoning</span>
+            <h3>Guessing meaning is a reasoning problem</h3>
+            <p style="color:var(--muted)">Fragments like "water cold kitchen" can mean four different things. Every request goes through SERV Reasoning, which weighs the place, the conversation partner and your past choices before it ranks the sentences, so a small, fast model can still read you accurately. Each answer shows a short reasoning note so carers can check it.</p>
+          </div>
+          <pre><code>POST /v1/chat/completions
+model: gpt-5.4-mini · reasoning_effort: low
+
+{ "fragments": "water cold",
+  "context": { "place": "home" } }
+
+→ { "sentences": [
+     { "text": "Could I have a glass of
+        cold water, please?",
+       "tone": "request" }, … ],
+    "reasoning": ["'water'+'cold' at home
+       → most likely a drink request"] }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap" style="text-align:center;padding:40px 0 100px">
+      <h2 class="mega" style="font-size:clamp(2.2rem,5vw,3.6rem)">Say it<sup>*</sup></h2>
+      <a class="btn btn-primary" href="/app">Open WordBridge ▸</a>
+    </div>
+  </main>
+
+  <div class="wrap">
+    <footer class="footer">
+      <span>© 2026 WordBridge · Built for SERV Hackathon 02</span>
+      <span>WordBridge is a communication aid, not a medical device.</span>
+    </footer>
+  </div>
+</body>
+</html>
