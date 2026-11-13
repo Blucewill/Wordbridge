@@ -1,4 +1,4 @@
-// Vercel serverless entry: POST /api/<agent>. Same behaviour as server.js, so the app
+// Vercel serverless entry: POST /api/<agent> (rewritten to /api/agent?agent=<agent> by vercel.json). Same behaviour as server.js, so the app
 // can be hosted for free on Vercel (no card needed). Local dev still uses `node server.js`.
 import { servChat, extractJSON, hasKey, DEFAULT_MODEL } from "../lib/serv.js";
 import { agents } from "../agents.js";
