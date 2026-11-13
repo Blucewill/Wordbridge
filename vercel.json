@@ -8,7 +8,7 @@
     "api/health.js": { "maxDuration": 10 }
   },
   "rewrites": [
-    { "source": "/api/:name((?!health$|agent$)[a-z_]+)", "destination": "/api/agent?agent=:name" }
+    { "source": "/api/:name", "destination": "/api/agent?agent=:name" }
   ],
   "headers": [
     { "source": "/sw.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
