@@ -21,8 +21,8 @@ Adults with **expressive aphasia** after a stroke or brain injury (about 2M+ peo
 
 **What was built during the hackathon:** Everything. The landing page, the app, the SERV agents and the zero-dependency server were all built for SERV Hackathon 02 (Nov 2026).
 
-**Public repo:** https://github.com/<your-username>/wordbridge
-**Live demo:** https://wordbridge.onrender.com (after deploying with render.yaml), demo route `/app?sample=1`
+**Public repo:** https://github.com/Blucewill/Wordbridge
+**Live demo:** https://wordbridgee.vercel.app/app (landing page: https://wordbridgee.vercel.app, auto-demo: https://wordbridgee.vercel.app/app?sample=1)
 **Demo video:** <paste YouTube/Loom link>
 **X post:** <paste link>
 
@@ -37,7 +37,7 @@ Tap a few words ("water… cold") and WordBridge offers full sentences, then spe
 
 Built on @openservai SERV Reasoning for #SERVHackathon
 
-[demo link] [repo link]
+https://wordbridgee.vercel.app https://github.com/Blucewill/Wordbridge
 ```
 
 ## 90-second demo video script
